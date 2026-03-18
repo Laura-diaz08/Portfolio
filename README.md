@@ -24,7 +24,7 @@ Si deseas probar este proyecto en tu propio entorno local, sigue estos pasos:
 ### 1. Clonar el repositorio
 Abre tu terminal y clona el proyecto con Git:
 ```bash
-git clone [https://github.com/Laura_diaz08/portfolio.git](https://github.com/Laura_diaz08/portfolio.git)
+git clone (https://github.com/Laura_diaz08/Portfolio.git)
 cd portfolio 
 ´´´
 
