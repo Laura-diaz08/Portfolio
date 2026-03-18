@@ -1,1 +1,9 @@
-<p>home works!</p>
+@if (personalInfo) {
+  <div class="home-container">
+    <h1>¡Hola! Soy <span class="highlight">{{ personalInfo.name }}</span></h1>
+    <h2>{{ personalInfo.role }}</h2>
+    <p>{{ personalInfo.description }}</p>
+  </div>
+} @else {
+  <p class="loading">Cargando perfil...</p>
+}

@@ -1,11 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrl: './home.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  personalInfo: any;
 
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.dataService.getPortfolioData().subscribe(data => {
+      console.log("¡Paquete recibido!", data);
+      this.personalInfo = data.personalInfo;
+    });
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "personalInfo": {
+    "name": "Laura",
+    "role": "Desarrolladora Web",
+    "description": "¡Hola! Soy Laura, una apasionada del desarrollo web. Me encanta aprender nuevas tecnologías y crear aplicaciones increíbles."
+  },
+  "skills": [
+    { "name": "HTML5", "level": "Avanzado" },
+    { "name": "CSS3", "level": "Avanzado" },
+    { "name": "JavaScript", "level": "Intermedio" },
+    { "name": "Angular", "level": "Aprendiendo" },
+    { "name": "Java", "level": "Intermedio" },
+    { "name": "Python", "level": "Intermedio" }
+  ],
+  "projects": [
+    {
+      "title": "Portfolio Personal",
+      "description": "Mi primer portfolio creado con Angular 21",
+      "technologies": ["Angular", "CSS", "JSON"],
+      "githubLink": "https://github.com/Laura_diaz08/portfolio"
+    },
+    {
+      "title": "Proyecto de Gestión Hotelera",
+      "description": "Una aplicación web desarrollada durante el ciclo formativo sobre la gestión web de un hotel, accsible tanto para el cliente como para los trabajadores.",
+      "technologies": ["HTML", "CSS", "Angular", "SpringBoot"],
+      "githubLink": "https://github.com/Laura_diaz08/hotelink-front"
+    }
+  ]
+}
