@@ -1,59 +1,39 @@
-# Portfolio
+# Portfolio Personal - Laura Díaz
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.1.
+## Descripción del Proyecto
+Este proyecto es un portfolio web personal interactivo desarrollado para demostrar mis habilidades como desarrolladora. 
 
-## Development server
+La aplicación está construida con **Angular** y se divide en varias secciones dinámicas:
+- **Home / Sobre mí:** Presentación personal con un diseño "Hero" moderno.
+- **Habilidades:** Un repaso visual por mi stack tecnológico (HTML, CSS, JS, Angular, Java, Spring Boot, SQL, Docker y Git) utilizando tarjetas interactivas.
+- **Proyectos:** Galería de mis trabajos más destacados, cargados dinámicamente desde un archivo `data.json`.
+- **Contacto:** Formulario implementado con _Reactive Forms_ de Angular.
 
-To start a local development server, run:
+El diseño es 100% responsivo (adaptable a dispositivos móviles) y utiliza tecnologías modernas como CSS Grid, Flexbox y tipografías de Google Fonts.
 
+## Enlaces
+* **Repositorio en GitHub:** (https://github.com/Laura_diaz08/portfolio)
+* **Demo en vivo:** (https://portfolio-pink-psi-b108dqhfif.vercel.app/)
+
+---
+
+## Instalación y Ejecución Local
+
+Si deseas probar este proyecto en tu propio entorno local, sigue estos pasos:
+
+### 1. Clonar el repositorio
+Abre tu terminal y clona el proyecto con Git:
 ```bash
-ng serve
-```
+git clone [https://github.com/Laura_diaz08/portfolio.git](https://github.com/Laura_diaz08/portfolio.git)
+cd portfolio 
+´´´
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 2. Instalar las dependencias
+Para descargar todos los paquetes necesarios (Node modules), ejecuta el siguiente comando:
 
-## Code scaffolding
+npm install
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 3. Ejecutar el servidor de desarrollo
+Para compilar la aplicación y levantar el servidor local, utiliza:
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ng serve -o
