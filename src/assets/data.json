@@ -21,13 +21,15 @@
       "title": "Portfolio Personal",
       "description": "Mi primer portfolio creado con Angular 21. Es un portfolio donde me describo profesionalmente, incluyendo habilidades tecnológicas y proyectos realizados.",
       "technologies": ["Angular", "CSS", "JSON"],
-      "githubLink": "https://github.com/Laura_diaz08/portfolio"
+      "githubLink": "https://github.com/Laura_diaz08/portfolio",
+      "image": "assets/images/proyectoPortfolio.jpg"
     },
     {
       "title": "Proyecto de Gestión Hotelera",
       "description": "Una aplicación web desarrollada durante el ciclo formativo sobre la gestión web de un hotel, accsible tanto para el cliente como para los trabajadores. En esta se puede gestionar los servicios ofrecidos por el mismo hotel, reservas e incidencias.",
       "technologies": ["HTML", "CSS", "Angular", "SpringBoot"],
-      "githubLink": "https://github.com/Laura_diaz08/hotelink-front"
+      "githubLink": "https://github.com/Laura_diaz08/hotelink-front", 
+      "image": "assets/images/proyectHotel.jpg"
     }
   ]
 }

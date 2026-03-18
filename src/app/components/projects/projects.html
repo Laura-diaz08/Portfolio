@@ -1,22 +1,38 @@
 <div class="modern-container">
-  <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
+  <div class="header-section">
+    <h2 class="section-title">Mis <span class="highlight">Creaciones</span></h2>
+    <p class="subtitle">Proyectos donde aplico mis conocimientos.</p>
+  </div>
 
   <div class="projects-grid">
     @for (project of projects; track project.title) {
-      <article class="modern-card">
-        <h3>{{ project.title }}</h3>
-        <p class="description">{{ project.description }}</p>
+      <article class="project-card">
         
-        <div class="tech-tags">
-          @for (tech of project.technologies; track tech) {
-            <span class="tag">{{ tech }}</span>
-          }
+        <div class="card-image-wrapper">
+          <img [src]="project.image" [alt]="'Captura de ' + project.title" class="project-img">
         </div>
 
-        <a [href]="project.githubLink" target="_blank" class="modern-btn">Ver en GitHub</a>
+        <div class="card-content">
+          <h3>{{ project.title }}</h3>
+          <p class="description">{{ project.description }}</p>
+          
+          <div class="tech-tags">
+            @for (tech of project.technologies; track tech) {
+              <span class="tag">{{ tech }}</span>
+            }
+          </div>
+
+          <a [href]="project.githubLink" target="_blank" class="github-btn">
+            <i class="fa-brands fa-github"></i> Ver Código
+          </a>
+        </div>
+
       </article>
     } @empty {
-      <p class="loading">Cargando proyectos increíbles...</p>
+      <div class="loading-wrapper">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+        <p class="loading">Cargando proyectos increíbles...</p>
+      </div>
     }
   </div>
 </div>
