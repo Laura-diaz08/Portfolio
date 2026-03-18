@@ -137,23 +137,42 @@ h1 {
 
 @media (max-width: 850px) {
   .hero-container {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; 
     text-align: center;
-    gap: 40px;
+    gap: 30px;
+    padding: 10px; 
+    margin: 20px auto;
   }
+  
+  h1 {
+    font-size: 2.2rem; 
+  }
+  
+  .role-text {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
   .description {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 25px auto;
+    font-size: 1rem;
+    padding: 0 10px; 
   }
+  
   .hero-actions {
     justify-content: center;
     flex-direction: column;
+    gap: 20px;
   }
+
   .profile-img {
+    width: 220px;
+    height: 220px;
+    border-width: 5px;
+  }
+  
+  .image-backdrop {
     width: 250px;
     height: 250px;
-  }
-  .image-backdrop {
-    width: 300px;
-    height: 300px;
   }
 }
