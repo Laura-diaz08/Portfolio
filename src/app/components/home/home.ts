@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.dataService.getPortfolioData().subscribe(data => {
-      console.log("¡Paquete recibido!", data);
       this.personalInfo = data.personalInfo;
     });
   }

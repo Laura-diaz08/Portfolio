@@ -10,7 +10,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  // Método para pedir la información
+  // Método para pedir la información del JSON
   getPortfolioData(): Observable<any> {
     return this.http.get(this.dataUrl);
   }

@@ -6,9 +6,11 @@ import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    // Configura la detección de cambios de Angular
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
+    // Activa el cliente HTTP para poder leer archivos locales
     provideHttpClient()
   ]
 };
