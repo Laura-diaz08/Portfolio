@@ -2,26 +2,30 @@
   "personalInfo": {
     "name": "Laura",
     "role": "Desarrolladora Web",
-    "description": "¡Hola! Soy Laura, una apasionada del desarrollo web. Me encanta aprender nuevas tecnologías y crear aplicaciones increíbles."
+    "description": "¡Hola! Soy Laura, estudiante de informática orientada al desarrollo web, con capacidad de aprendizaje constante y compromiso con la calidad de trabajo. Me caracterizo por mi responsabilidad, constancia y capacidad para adaptarme a nuevos entornos y tecnologías. Disfruto trabajar en equipo, aportar ideas y colaborar en la resolución de problemas de manera eficiente."
   },
   "skills": [
     { "name": "HTML5", "level": "Avanzado" },
     { "name": "CSS3", "level": "Avanzado" },
-    { "name": "JavaScript", "level": "Intermedio" },
+    { "name": "JavaScript", "level": "Avanzado" },
     { "name": "Angular", "level": "Aprendiendo" },
     { "name": "Java", "level": "Intermedio" },
-    { "name": "Python", "level": "Intermedio" }
+    { "name": "Python", "level": "Intermedio" },
+    { "name": "SQL", "level": "Intermedio" },
+    { "name": "SpringBoot", "level": "Intermedio" },
+    { "name": "Git", "level": "Avanzado" },
+    { "name": "Docker", "level": "Aprendiendo" }
   ],
   "projects": [
     {
       "title": "Portfolio Personal",
-      "description": "Mi primer portfolio creado con Angular 21",
+      "description": "Mi primer portfolio creado con Angular 21. Es un portfolio donde me describo profesionalmente, incluyendo habilidades tecnológicas y proyectos realizados.",
       "technologies": ["Angular", "CSS", "JSON"],
       "githubLink": "https://github.com/Laura_diaz08/portfolio"
     },
     {
       "title": "Proyecto de Gestión Hotelera",
-      "description": "Una aplicación web desarrollada durante el ciclo formativo sobre la gestión web de un hotel, accsible tanto para el cliente como para los trabajadores.",
+      "description": "Una aplicación web desarrollada durante el ciclo formativo sobre la gestión web de un hotel, accsible tanto para el cliente como para los trabajadores. En esta se puede gestionar los servicios ofrecidos por el mismo hotel, reservas e incidencias.",
       "technologies": ["HTML", "CSS", "Angular", "SpringBoot"],
       "githubLink": "https://github.com/Laura_diaz08/hotelink-front"
     }

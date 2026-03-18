@@ -1,17 +1,63 @@
 <div class="modern-container">
-  <h2 class="section-title">Ponte en <span class="highlight">Contacto</span></h2>
+  <h2 class="section-title">Vamos a <span class="highlight">ponernos en Contacto</span></h2>
 
-  <div class="contact-card">
-    <h3>¿Hablamos?</h3>
-    <p class="description">
-      Actualmente estoy abierta a nuevas oportunidades y proyectos. 
-      Si te ha gustado mi perfil, tienes alguna pregunta o simplemente quieres saludar, ¡no dudes en escribirme!
-    </p>
+  <div class="contact-wrapper">
     
-    <div class="contact-buttons">
-      <a href="mailto:lauritadr0808@gmail.com" class="modern-btn">Envíame un Email</a>
-      
-      <a href="https://github.com/Laura_diaz08" target="_blank" class="modern-btn outline-btn">Visita mi GitHub</a>
+    <div class="info-column">
+      <div class="info-card">
+        <h3>Mi Contacto</h3>
+        <p class="info-text">
+          ¿Tienes un proyecto en mente, una pregunta o simplemente quieres saludar? 
+          Me encantaría saber de ti. Puedes usar el formulario o contactarme a través de mis redes.
+        </p>
+        
+        <div class="details-list">
+          <div class="detail-item">
+            <span class="icon">📧</span>
+            <a href="mailto:lauritadr0808@gmail.com">lauritadr0808@gmail.com</a>
+          </div>
+          <div class="detail-item">
+            <span class="icon">💻</span>
+            <a href="https://github.com/Laura_diaz08" target="_blank">github.com/Laura_diaz08</a>
+          </div>
+          <div class="detail-item">
+            <span class="icon">📍</span>
+            <span>Cádiz, España</span>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="form-column">
+      <form [formGroup]="contactForm" (ngSubmit)="onEnviar()" class="modern-form">
+        
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" formControlName="nombre" placeholder="Laura Díaz">
+          <div *ngIf="contactForm.get('nombre')?.touched && contactForm.get('nombre')?.invalid" class="error-msg">El nombre es obligatorio (mínimo 3 letras).</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" formControlName="email" placeholder="lauritadr0808@gmail.com">
+          <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="error-msg">Por favor, introduce un email válido.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Tu mensaje</label>
+          <textarea id="mensaje" formControlName="mensaje" rows="5" placeholder="Cuéntame tu idea..."></textarea>
+          <div *ngIf="contactForm.get('mensaje')?.touched && contactForm.get('mensaje')?.invalid" class="error-msg">El mensaje debe tener al menos 10 caracteres.</div>
+        </div>
+
+        <button type="submit" class="modern-btn" [disabled]="contactForm.invalid">
+          Enviar Mensaje
+        </button>
+
+        <div *ngIf="enviado" class="feedback-msg success">¡Mensaje simulado con éxito!</div>
+        <div *ngIf="error" class="feedback-msg error">Por favor, rellena todos los campos correctamente.</div>
+
+      </form>
+    </div>
+
   </div>
 </div>

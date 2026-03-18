@@ -34,3 +34,18 @@ p {
   color: #e84393;
   font-style: italic;
 }
+
+.profile-img {
+  width: 180px;      
+  height: 180px;      
+  border-radius: 50%; 
+  object-fit: cover;  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  border: 5px solid #ffffff; 
+  margin-bottom: 25px;       
+  transition: transform 0.3s ease; 
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
