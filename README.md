@@ -12,7 +12,7 @@ La aplicación está construida con **Angular** y se divide en varias secciones 
 El diseño es 100% responsivo (adaptable a dispositivos móviles) y utiliza tecnologías modernas como CSS Grid, Flexbox y tipografías de Google Fonts.
 
 ## Enlaces
-* **Repositorio en GitHub:** (https://github.com/Laura_diaz08/portfolio)
+* **Repositorio en GitHub:** (https://github.com/Laura_diaz08/Portfolio)
 * **Demo en vivo:** (https://portfolio-pink-psi-b108dqhfif.vercel.app/)
 
 ---
@@ -22,18 +22,22 @@ El diseño es 100% responsivo (adaptable a dispositivos móviles) y utiliza tecn
 Si deseas probar este proyecto en tu propio entorno local, sigue estos pasos:
 
 ### 1. Clonar el repositorio
+ 
 Abre tu terminal y clona el proyecto con Git:
 ```bash
 git clone (https://github.com/Laura_diaz08/Portfolio.git)
 cd portfolio 
-´´´
+```
 
 ### 2. Instalar las dependencias
 Para descargar todos los paquetes necesarios (Node modules), ejecuta el siguiente comando:
-
+```bash
 npm install
+```
 
 ### 3. Ejecutar el servidor de desarrollo
 Para compilar la aplicación y levantar el servidor local, utiliza:
 
+```bash
 ng serve -o
+```
