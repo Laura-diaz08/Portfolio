@@ -1,9 +1,14 @@
 <div class="modern-container">
-  <h2 class="section-title">Mis <span class="highlight">Habilidades</span></h2>
+  <div class="header-section">
+    <h2 class="section-title">Mi <span class="highlight">Habilidades</span> Tecnológicas</h2>
+    <p class="subtitle">Herramientas y tecnologías que uso.</p>
+  </div>
 
   <div class="skills-grid">
     @for (skill of skills; track skill.name) {
       <div class="skill-card">
+        <i [class]="skill.icon + ' skill-icon'"></i>
+        
         <h3>{{ skill.name }}</h3>
         <p class="skill-level">{{ skill.level }}</p> 
       </div>
