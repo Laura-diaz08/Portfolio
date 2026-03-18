@@ -1,0 +1,29 @@
+.modern-footer {
+  background-color: #2c3e50; 
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 80px; 
+  border-top: 4px solid #e84393; 
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #ecf0f1;
+}
+
+.made-with {
+  font-size: 0.85rem;
+  color: #95a5a6;
+}
+
+.heart-icon {
+  color: #e84393;
+}
